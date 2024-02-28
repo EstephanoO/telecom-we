@@ -4,11 +4,13 @@ import { ReadonlyRequestCookies } from 'next/dist/server/web/spec-extension/adap
 export const pb = new PocketBase('https://pym-database.pockethost.io');
 export const LOCAL_URL = 'https://pym-database.pockethost.io/api/collections'
 export const FORM_API = 'Formulario/records'
+export const GETUSERS_API = 'users/records'
 export const UBIS_API = 'Ubicacion/records'
 export const FILE_API = 'Archivos/records'
 export const CARP_API = 'Carpetas/records'
 export const ROL_API = 'Roles/records'
 export const USER_API = 'users/auth-with-password'
+export const WEEK_API = 'Formularios_Semanal/records'
 
 
 

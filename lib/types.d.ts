@@ -45,3 +45,23 @@ export type Coordinates = {
   Descripcion: string
 };
 
+export type lastSendsData = {
+  id?: string
+  name: string
+  value: number 
+  workType: string
+  location: string
+  createdAt?: string
+}
+export type WeekForms = {
+  PorcentajeCambio: string;
+  Anio:  number
+  Semana:  string
+  SumaDelTrabajo: number 
+  TipoTrabajo:  string
+  Trabajadores: string
+  collectionId:  string
+  collectionName: string
+  id: string 
+}
+

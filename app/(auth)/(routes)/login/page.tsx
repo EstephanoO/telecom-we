@@ -1,7 +1,8 @@
 'use client';
 
+import { pb } from '@/lib/db';
 import { useRouter } from 'next/navigation';
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function LoginPage() {
   const route = useRouter();
@@ -11,7 +12,6 @@ function LoginPage() {
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
     try {
       const form = { email, password };
       const response = await fetch('/api/auth', {
